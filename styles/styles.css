@@ -112,6 +112,9 @@ main{
 .feature-title{
     margin: 15px 0;
 }
+#quick-list{
+    font-weight: 400;
+}
 
 
 /*Responsive Media Query*/
@@ -127,18 +130,32 @@ main{
         gap: 20px;
         font-size: 1rem;
     }
+    .feature-title,
     .banner-title{
         font-size: 3rem;
     }
+    .feature-description,
     .banner-description{
         padding: 0 10px;
+        text-align: justify;
     }
     .explore-btn{
-        font-size: 1rem;
-        padding: 10px 15px; 
+        font-size: 1.1rem;
+        padding: 15px 20px; 
         margin-top: 10px;   
     }
     .banner-image{
         margin: 20px auto;
+    }
+
+
+    .team{
+        flex-direction: column;
+    }
+    /* .image-container{
+        grid-template-columns: repeat(1, 1fr);
+    } */
+    .features{
+        align-items: center;
     }
 }
