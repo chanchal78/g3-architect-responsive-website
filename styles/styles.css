@@ -32,6 +32,8 @@
     justify-content: space-between;
     align-items: center;
 }
+.feature-title,
+.second-feature-title,
 .brand{
     font-weight: 700;
     font-size: 3rem;
@@ -59,7 +61,7 @@ li{
     margin: 0 auto;
     text-align: center;
 }
-.feature-title,
+
 .banner-title{
     font-size: 4rem;
     font-size: 700;
@@ -116,6 +118,51 @@ main{
     font-weight: 400;
 }
 
+.second-feature{
+    margin-top: 100px;
+    gap: 145px;
+    justify-content: center;
+}
+.second-feature-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.feature-card{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.more-features{
+    width: 585px;
+}
+.architect img{
+    width: 100%;
+}
+#experience-badge{
+    display: inline-block;
+    background-color: #FF900E;
+    text-align: center;
+    color: white;
+    padding: 35px;
+    border-radius: 7px;
+    margin-left: -90px;
+    margin-top: -125px;
+}
+#experience-badge h3{
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
+}
+#experience-badge p{
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 500;
+}
 
 /*Responsive Media Query*/
 @media screen and (max-width: 576px){
