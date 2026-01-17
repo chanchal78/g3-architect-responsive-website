@@ -170,9 +170,13 @@ main{
 }
 
 /*Fact section*/
+.fact-section-title{
+    margin-bottom: 0;
+}
 .fact-card-container{
     display: flex;
     justify-content: space-around;
+    margin-top: 80px;
 }
 .fact-section-description{
     max-width: 540px;
@@ -184,11 +188,12 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    height: 240px;
-    width: 240px;
-}
-.fact-icons{
+    max-width: 240px;
     width: 100%;
+    padding: 45px 0;
+}
+.card-icons{
+    width: 45px;
 }
 .fact-numbers-total{
     font-size: 2rem;
@@ -200,6 +205,15 @@ main{
     font-weight: 600;
     margin: 5px;
 }
+.fact-card:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px 20px rgb(227, 227, 227);
+
+}
+.fact-card:hover .card-icons{
+    transform: rotate(360deg);
+    transition: 01s;
+}
 
 
 
@@ -210,6 +224,7 @@ main{
     .navbar{
         flex-direction: column;
     }
+    .fact-section-title,
     .feature-title,
     .second-feature-title,
     .brand{
@@ -224,6 +239,7 @@ main{
     .banner-title{
         font-size: 3rem;
     }
+    .fact-section-description,
     .feature-description,
     .second-feature-description,
     .second-feature p,
@@ -276,5 +292,23 @@ main{
     #experience-badge p{
         font-size: 1.1rem;
     }
+
+    .facts{
+        margin-top: 50px;
+    }
+    .fact-card-container{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .fact-card{
+        padding: 20px 0;
+        max-width: 350px;
+        width: 100%;
+    }
+
 
 }
