@@ -56,6 +56,13 @@ li{
     max-width: 1440px;
     margin: 0 auto;
 }
+.menu a:hover{
+    color: #FF900E;
+    transform: scale(1.1);
+}
+.brand:hover{
+    cursor: pointer;
+}
 
 /*banner*/
 .banner-content{
@@ -175,6 +182,9 @@ main{
 }
 
 /*Fact section*/
+.facts{
+    margin-top: 100px;
+}
 .fact-section-title{
     margin-bottom: 0;
 }
@@ -238,6 +248,17 @@ main{
 }
 
 
+.footer{
+    margin-top: 120px;
+    text-align: center;
+    padding: 40px 0;
+}
+.footer p{
+    font-size: 1.2rem;
+}
+
+
+
 
 
 
@@ -246,6 +267,7 @@ main{
     .navbar{
         flex-direction: column;
     }
+    .sponsors-section-title,
     .fact-section-title,
     .feature-title,
     .second-feature-title,
@@ -333,10 +355,19 @@ main{
         margin-top: 80px;
     }
     .sponsors-link-logo{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);   
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;  
     }
     .logo{
-        width: 100px;
+        width: 80px;
+    }
+
+
+    .footer{
+        margin-top: 70px;
+    }
+    .footer p{
+        font-size: 1rem;
     }
 }
